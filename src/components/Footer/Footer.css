@@ -1,0 +1,9 @@
+/* .MuiSvgIcon-root{
+      fill : green
+  } */
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    visibility: hidden;
+  }
+}

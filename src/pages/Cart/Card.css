@@ -1,0 +1,36 @@
+.card {
+  width: 100% !important;
+  height: auto;
+  margin: 5px 0px 0px 0px;
+  border-radius: 25px !important;
+}
+
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #47a848 !important;
+}
+
+.MuiInputBase-root {
+  width: 100% !important;
+}
+
+.MuiFormControl-fullWidth {
+  width: 100%;
+  /* margin-top: -20px !important; */
+}
+
+.MuiInput-underline:after {
+  border-bottom: #47a848 !important;
+}
+
+.MuiPopover-paper {
+  max-height: 150px !important;
+}
+
+.cartcard {
+  box-shadow: 0px 0.5px 2px #47a848, 0px 0.5px 1px #47a848 !important;
+}
+
+.MuiTypography-body1 {
+  font-family: inherit !important;
+}

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Cookies from "js-cookie";
+import Routes from "./Routes";
+import "./App.css";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
+  const [auth, setAuth] = useState(false);
+
+  const readCookie = () => {
+    const user = Cookies.get("user");
+    if (user) {
+      setAuth(true);
+    }
+  };
+
+  useEffect(() => {
+    readCookie();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes />
+    </Router>
   );
 }
 

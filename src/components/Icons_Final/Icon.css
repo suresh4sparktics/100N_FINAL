@@ -1,0 +1,20 @@
+.menu {
+  width: 20px;
+  height: 18px;
+  padding: 23px 20px;
+}
+.bar {
+  height: 3px;
+  background: #47a848;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  display: block;
+  width: 10px;
+  transition: 0.2s ease-in;
+}
+.bar2 {
+  width: 20px;
+}
+.menu:hover .bar {
+  width: 20px;
+}
